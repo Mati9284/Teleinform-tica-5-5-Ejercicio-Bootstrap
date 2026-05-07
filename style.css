@@ -1,0 +1,108 @@
+:root {
+    --white:#ffff;
+    --red:#c90000;
+    --redblack:#730A13;
+    --links:#F2B6BB;
+    --brown:#BF907E;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: "roboto";
+}
+
+.relleno-header {
+    width: 100%;
+    height: 62px;
+}
+
+.logo-imagen {
+    
+    margin-right: 50px;
+}
+
+.encabezado-pagina {
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+    background-color: var(--red);
+    background-image: linear-gradient( to right, rgb(255, 41, 41), var(--redblack));
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    color: var(--white);
+}
+
+.seccion-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+
+.links {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.links:hover {
+    color: var(--links);
+}
+
+body {
+    background-image: url(/assets/img/FondoHollowKnightSilksong.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--white);
+}
+
+
+
+
+.hola{
+    width: 100px;
+    height: 100px;
+    background-image: url(foto1); background-size: cover;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 15s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    }
+
+@keyframes myAnimation {
+    0%   {background-image: url(foto1); background-size: cover;}
+    20%  {background-image: url(foto2); background-size: cover;}
+    50%  {background-image: url(foto2); background-size: cover;}
+    75%  {background-image: url(foto2.png); background-size: cover;}
+    100%  {background-image: url(foto2.png); background-size: cover;}
+}
+
+.card-img-top {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.card-body {
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+  @keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  } 
